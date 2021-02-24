@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf=8">
+    <title>Primeira Calculadora</title>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1 class="text-center">Calculadora</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 p-3"></div>
+            <div class="col-4 p-3">
+                <input id="display" class="form-control text-end" placeholder="0,0">
+            </div>
+            <div class="col-4 p-3"></div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-4"></div>
+            <div class="col-1 text-center">
+                <button class="btn btn-outline-primary" id="7" onclick="numero(this)">7</button>
+            </div>
+            <div class="col-1 text-center">
+                <button class="btn btn-outline-primary" id="8" onclick="numero(this)">8</button>
+            </div>
+            <div class="col-1 text-center">
+                <button class="btn btn-outline-primary"id="9" onclick="numero(this)">9</button>
+            </div>
+            <div class="col-1 text-center">
+                <button class="btn btn-outline-primary" onclick="operacao(this)">X</button>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
