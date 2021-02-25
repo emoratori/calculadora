@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body onload="c()">
     <h1 class="text-center">Calculadora</h1>
 
     <div class="container-fluid">
@@ -21,19 +21,85 @@
         </div>
         <div class="row align-items-center">
             <div class="col-4"></div>
-            <div class="col-1 text-center">
-                <button class="btn btn-outline-primary" id="7" onclick="numero(this)">7</button>
-            </div>
-            <div class="col-1 text-center">
-                <button class="btn btn-outline-primary" id="8" onclick="numero(this)">8</button>
-            </div>
-            <div class="col-1 text-center">
-                <button class="btn btn-outline-primary"id="9" onclick="numero(this)">9</button>
-            </div>
-            <div class="col-1 text-center">
-                <button class="btn btn-outline-primary" onclick="operacao(this)">X</button>
-            </div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="C" onclick="c()">C</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="MRC" onclick="numero(this)">MCR</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="M+" onclick="numero(this)">M+</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="M-" onclick="operacao(this)">M-</button>
+            </div></div>
             <div class="col-4"></div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-4"></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="7" onclick="numero(this)">7</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="8" onclick="numero(this)">8</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="9" onclick="numero(this)">9</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="/" onclick="operacao(this)">/</button>
+            </div></div>
+            <div class="col-4"></div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-4"></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="4" onclick="numero(this)">4</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="5" onclick="numero(this)">5</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="6" onclick="numero(this)">6</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="x" onclick="operacao(this)">X</button>
+            </div></div>
+            <div class="col-4"></div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-4"></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="1" onclick="numero(this)">1</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="2" onclick="numero(this)">2</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="3" onclick="numero(this)">3</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="-" onclick="operacao(this)">-</button>
+            </div></div>
+            <div class="col-4"></div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-4"></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="0" onclick="numero(this)">0</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="," onclick="operacao(this)">,</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="=" onclick="igual(igual)">=</button>
+            </div></div>
+            <div class="col-1 text-center"><div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" id="+" onclick="operacao(this)">+</button>
+            </div></div>
+            <div class="col-4"></div>
+        </div>
+    
         </div>
     </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
